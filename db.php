@@ -8,6 +8,6 @@ $dbname = "cms";
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
 if (!$conn) {
-    die ("Connection Failed: ", mysqli_connect_error());
+    die ("Connection Failed: ". mysqli_connect_error());
 }
 ?>
